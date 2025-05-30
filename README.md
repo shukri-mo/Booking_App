@@ -1,8 +1,83 @@
-# React + Vite
+# 🏨 Hotel Booking Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **full-stack hotel management system** built with **Supabase** for internal use by hotel staff. The application allows users to **manage room bookings, check-ins, check-outs**, and handle guest information securely.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
+
+- 🔐 **Authentication**
+  - Only registered users can log in.
+  - Unauthenticated users are restricted from accessing booking and guest data.
+
+- 🛏️ **Cabins (Rooms) Management**
+  - View and manage available rooms.
+  - Includes room details such as price, capacity, and amenities.
+
+- 👤 **Guest Management**
+  - Store guest information including name, contact details, and special requests.
+
+- 📅 **Booking Management**
+  - View and manage bookings.
+  - Track check-in/check-out dates, booking status, and payments.
+
+- ⚙️ **Settings Panel**
+  - Configure app-wide settings.
+ 
+  
+## 📊 Dashboard
+
+The app includes an interactive dashboard powered by **ECharts** to display:
+
+- Booking trends over time
+- Occupancy analytics
+- Guest statistics
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend**: React
+- **Backend & Database**: Supabase (PostgreSQL)
+- **Auth**: Supabase Auth
+- **Hosting**: Your preferred hosting service (e.g., Vercel, Netlify)
+
+---
+
+## 🔐 Authentication
+
+- **Login/Logout functionality** is provided using Supabase Auth.
+- Only authenticated users (hotel staff) can access the dashboard and manage data.
+- Users must be **pre-registered** within the system.
+
+---
+
+## 📂 Database Tables
+
+| Table      | Purpose                                 |
+|------------|-----------------------------------------|
+| `cabins`   | Stores information about each room      |
+| `guests`   | Stores guest profiles and details       |
+| `bookings` | Tracks reservations, dates, and status  |
+| `settings` | Contains configurable app-wide settings |
+| `users`    | Handles authentication and access       |
+
+---
+
+## 👥 Intended Users
+
+- Hotel reception staff
+- Hotel managers or admin users
+
+---
+
+## 🚀 Getting Started
+
+1. Clone this repository.
+2. Set up a Supabase project and link your credentials.
+3. Add your environment variables (`.env.local` or `.env`).
+4. Run the development server:
+
+```bash
+npm install
+npm run dev
