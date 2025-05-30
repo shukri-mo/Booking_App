@@ -71,6 +71,20 @@ The app includes an interactive dashboard powered by **ECharts** to display:
 
 ---
 
+## 📚 Lessons Learned
+
+- 🔐 Gained hands-on experience with **authentication and authorization** using Supabase
+- ⚡ Improved skills in building **full-stack applications**
+- 🧠 Learned how to structure and manage **relational data** across multiple tables (cabins, guests, bookings, settings)
+- 📊 Integrated **ECharts** to create a dynamic and insightful dashboard
+- 🧩 Designed UI logic to control access to sensitive data based on user authentication
+- 🔄 Built real-time features like booking updates and check-in/check-out tracking
+- 🔧 Practiced maintaining clean project structure and code organization
+
+
+---
+
+
 ## 🚀 Getting Started
 
 1. Clone this repository.
